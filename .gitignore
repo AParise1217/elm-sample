@@ -2,3 +2,7 @@
 
 # Ignore Node Dependencies
 node_modules
+
+# Ignore Build Directory
+dist
+elm-stuff
