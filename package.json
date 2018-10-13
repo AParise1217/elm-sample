@@ -1,0 +1,16 @@
+{
+  "name": "elm-test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": {
+      "email": "AndrewParise1994@gmail.com",
+      "name": "Andrew Parise"
+  },
+  "license": "MIT",
+    "scripts": {
+        "start-backend": "node api.js"
+    },
+    "dependencies": {
+        "json-server": "0.9.5"
+    }
+}
