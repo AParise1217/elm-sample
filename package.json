@@ -8,16 +8,18 @@
     },
     "license": "MIT",
     "scripts": {
-        "clean": "rm -rf dist && mkdir dist",
+        "start": "nf start",
+        "clean": "rm -rf dist && rm -rf elm-stuff && mkdir dist",
         "api": "node api.js",
         "build": "node ./node_modules/webpack/bin/webpack.js -d --config webpack.config.js",
-        "client": "node ./node_modules/.bin/webpack-dev-server --port 3000"
+        "client": "node_modules/.bin/webpack-dev-server -d --port 3000"
     },
     "dependencies": {
         "css-loader": "^1.0.0",
         "elm": "^0.19.0-bugfix2",
         "elm-webpack-loader": "^5.0.0",
         "file-loader": "^2.0.0",
+        "foreman": "^3.0.1",
         "json-server": "0.9.5",
         "node-elm-compiler": "^5.0.1",
         "style-loader": "^0.23.1",
